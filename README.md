@@ -86,7 +86,7 @@ Objective-C has long been able to solve both problems by allowing the `CustomVie
 ```
 This solves both problem #1 (exposing the internal implementation) and #2 (nested view hierarchy)
 
-The same code cannot be acheived in Swift as you cannot assign to `self` in a Class initializer. You cannot for instance do the following:
+The same code cannot be achieved in Swift as you cannot assign to `self` in a Class initializer. You cannot for instance do the following:
 
 > Swift
 

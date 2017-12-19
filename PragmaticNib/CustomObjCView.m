@@ -25,15 +25,12 @@
 
 - (instancetype) initWithCoder: (NSCoder*) aDecoder {
     NSLog(@"   CustomObjCView.initWithCoder:");
-    self = [super initWithCoder: aDecoder];
-    if (self) {
-        [self commonInit];
-    }
-    return self;
+    return [super initWithCoder: aDecoder];
 }
 
-- (void) commonInit {
-    NSLog(@"   CustomObjCView.commonInit");
+- (void) awakeFromNib {
+    [super awakeFromNib];
+    NSLog(@"   CustomObjCView.awakeFromNib");
 }
 
 @end

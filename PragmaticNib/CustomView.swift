@@ -22,12 +22,13 @@ public class CustomView: UIView {
     public required init?(coder aDecoder: NSCoder) {
         NSLog("   CustomView.init(coder:)")
         super.init(coder: aDecoder)
-        commonInit()
     }
 
-    fileprivate func commonInit() {
-        NSLog("   CustomView.commonInit()")
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        NSLog("   CustomView.awakeFromNib()")
     }
+    
 }
 
 // MARK: Protocol extension

@@ -1,4 +1,4 @@
-### Custom UIView's constructed using Nib's in Swift - the pragmatic way
+### A pragmatic approach to constructing custom UIView's with Nib's in Swift
 
 ### Problems
 
@@ -71,7 +71,7 @@ The Nib instantied `UIView` is then added as a subview of `CustomView`, leading 
 
 ##### Objective-C to the rescue
 
-Objective-C has long been able to solve both problems by allowing the `CustomView` subclass to instantiate it's visual elements using `UINib` inside the initializer and assigning the resulting `CustomView` to `self` as follows:
+Objective-C has long been able to solve both problems by allowing the `CustomView` subclass to instantiate it's visual elements using `loadNibNamed` inside the initializer and assigning the resulting `CustomView` to `self` as follows:
 
 > Objective-C
 
